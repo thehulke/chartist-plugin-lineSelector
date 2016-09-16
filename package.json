@@ -2,7 +2,7 @@
   "name": "chartist-plugins-line_selector",
   "version": "1.0.0",
   "description": "A chartist plugin for handeling hidden lines in the linechart",
-  "main": "chartist-plugin-lineSelector.js",
+  "main": "dist/chartist-plugin-lineSelector.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,10 +10,19 @@
     "type": "git",
     "url": "git+https://github.com/thehulke/chartist-plugin-lineSelector.git"
   },
+  "keywords": [
+    "chartist",
+    "plugin",
+    "line",
+    "line selector  "
+  ],
   "author": "Lior Gerstein",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/thehulke/chartist-plugin-lineSelector/issues"
   },
-  "homepage": "https://github.com/thehulke/chartist-plugin-lineSelector#readme"
+  "homepage": "https://github.com/thehulke/chartist-plugin-lineSelector#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
