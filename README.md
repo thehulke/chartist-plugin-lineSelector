@@ -4,7 +4,7 @@ Solving overlaping lines in line charts.
 
 Enables us to bring the selected line to the 'front', currently working by click event.
 
-`npm install chartist-plugin-lineselector`.
+`npm install --save chartist-plugins-line_selector`.
 
 In `options` at creating `new Chartist()`:
 
