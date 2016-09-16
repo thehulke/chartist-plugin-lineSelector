@@ -9,3 +9,5 @@ Enables us to bring the selected line to the 'front', currently working by click
 In `options` at creating `new Chartist()`:
 
 `plugins: [Chartist.plugins.lineSelector()],`
+
+[GitHub Repo](https://github.com/thehulke/chartist-plugin-lineSelector)
