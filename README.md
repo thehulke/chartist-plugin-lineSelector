@@ -11,3 +11,5 @@ In `options` at creating `new Chartist()`:
 `plugins: [Chartist.plugins.lineSelector()],`
 
 [GitHub Repo](https://github.com/thehulke/chartist-plugin-lineSelector)
+
+[Live Example](https://thehulke.github.io/chartist-plugin-lineSelector/)
