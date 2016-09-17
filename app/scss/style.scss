@@ -1,17 +1,50 @@
+@import 'fonts';
+
+$textColor : rgb(28, 29, 29);
+$codeBcg : #eaeaea;
+$slaColor: #335fc2;
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(10deg);
+  }
+  75% {
+    -webkit-transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
 body,
 html {
 	width: 100%;
 	height: 100%;
+  font-family: 'Roboto';
+  font-weight: 400;
 }
 body {
 	background: #fed;
 }
-$slaColor: #335fc2;
+h1, h2, h3, h4, p, span {
+  color: $textColor;
+}
+code {
+  background: $codeBcg;
+  padding: 3px;
+  border-radius: 4px;
+}
+a {
+  text-decoration: none;
+}
+
 
 .chart-container {
 	display: flex;
-	width: 100%;
-	height: 400px;
 	justify-content: center;
 	align-items: center;
 	div {
@@ -63,4 +96,41 @@ $slaColor: #335fc2;
 			stroke-width: 3px;
 		}
 	}
+}
+
+
+.wrapper {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  height: 100%;
+}
+.header{
+  margin-bottom: 20px;
+  .heading {
+    font-family: 'Baloo Bhaina', cursive;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  .heading-description {
+    font-family: 'Baloo Bhaina', cursive;
+    margin-top: -25px;
+  }
+}
+.link {
+  display: inline-block;
+  .ref-link {
+    font-weight: 600;
+    color: $slaColor;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &:hover {
+    animation: rotate 0.3s;
+  }
+  margin-top: 15px;
 }
