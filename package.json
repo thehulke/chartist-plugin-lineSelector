@@ -1,6 +1,6 @@
 {
   "name": "chartist-plugins-line_selector",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A chartist plugin for handeling hidden lines in the linechart",
   "main": "dist/chartist-plugin-lineSelector.js",
   "scripts": {
