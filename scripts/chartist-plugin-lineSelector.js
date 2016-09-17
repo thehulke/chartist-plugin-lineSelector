@@ -1,3 +1,5 @@
+var Chartist = require('chartist');
+
 Chartist.plugins = Chartist.plugins || {};
 Chartist.plugins.lineSelector = function() {
 
