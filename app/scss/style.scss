@@ -1,0 +1,66 @@
+body,
+html {
+	width: 100%;
+	height: 100%;
+}
+body {
+	background: #fed;
+}
+$slaColor: #335fc2;
+
+.chart-container {
+	display: flex;
+	width: 100%;
+	height: 400px;
+	justify-content: center;
+	align-items: center;
+	div {
+		display: inline-block;
+		position: relative;
+		.graphLabel {
+			font-family: 'helvetica neue';
+			position: absolute;
+			top: 97%;
+			left: 50%;
+		}
+	}
+}
+.customLine {
+	width: 470px;
+	height: 295px;
+}
+.ct-series-a .ct-bar {
+	/* Colour of your bars */
+	stroke: gold;
+	stroke-width: 20px;
+}
+.line-chart {
+	width: 470px;
+	height: 295px;
+	.ct-series {
+		.ct-point {
+			transition: all 0.3s;
+			&:hover {
+				stroke-width: 15px;
+				transition: all 0.3s;
+			}
+		}
+		.ct-area {
+			fill: none;
+		}
+	}
+	.ct-series-a {
+		.ct-line {
+			stroke: $slaColor;
+			stroke-width: 3px;
+		}
+		.ct-point {
+			stroke: $slaColor;
+		}
+	}
+	.ct-series-b {
+		.ct-line {
+			stroke-width: 3px;
+		}
+	}
+}
